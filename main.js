@@ -26,12 +26,40 @@ let func = sayHi;
 alert(sayHi());
 alert(func());
  */
+    /* 
+    let sayHi = function() {
+        alert("HI!");
+    };
 
-let sayHi = function() {
-    alert("HI!");
-};
+    let func = sayHi;
 
-let func = sayHi;
+    sayHi();
+    func();
+ */
+/* 
+function ask(question, yes, no) {
+    if (confirm(question)) yes()
+    else no()
+}
 
-sayHi();
-func();
+function showOk() {
+    alert("You agreed.");
+}
+
+function showCancel() {
+    alert("You canceled the execution.");
+}
+
+ask("Do you agree?", showOk, showCancel);
+ */
+
+function ask(question, yes, no) {
+    if (confirm(quesion)) yes()
+    else no();
+}
+
+ask(
+    "Do you agree",
+    function() { alert("You agreed."); },
+    function() {alert("You canceled the execution"); }
+);
