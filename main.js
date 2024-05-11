@@ -95,10 +95,10 @@ let suma = (a, b) =>{
 alert(suma(2,4));
  */
 
-let ask(question, yes, no) => confirm(question) ? yes() : no();
+/* let ask(question, yes, no) => confirm(question) ? yes() : no();
 
     ask(
         "Do you agree?",
         () => alert("You agreed"),
         () => alert("You interrumped the execution")
-    );
+    ); */
